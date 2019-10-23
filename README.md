@@ -1,8 +1,8 @@
 <h3>First build a boot-disk</h3>
-  - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit<cr>
+  - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit<br>
   
 <h3>Install Fan and install Fan control service</h3>
-  - https://github.com/Pyrestone/jetson-fan-ctl<cr>
+  - https://github.com/Pyrestone/jetson-fan-ctl<br>
   
 <h3>Chinese input iBus-chewing</h3>
   - #install iBus-chewing<cr>
