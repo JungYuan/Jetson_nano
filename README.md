@@ -11,5 +11,14 @@
   - $sudo shutdown -r
   - #in X-shell setup -> Region/Language -> input -> more -> other -> select Chinese(chewing)
  
+<h3>Install google chrome</h3>
+  - $wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - #lunch chrome
+  - #update google chrome
+  - $cat /etc/apt/sources.list.d/google-chrome.list
+  ### THIS FILE IS AUTOMATICALLY CONFIGURED ###
+  # You may comment out this entry, but any other modifications may be lost.
+  deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+ 
 <h3>Learn Hello AI world</h3>
   - https://github.com/dusty-nv/jetson-inference
