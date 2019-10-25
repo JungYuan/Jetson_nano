@@ -12,7 +12,7 @@
   #edit file to creat key<br>
   - sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml<br>
   ##Add following code into file##<br>
-  <pre>
+  <textarea>
     <code>
       <key name='enabled' type='b'>
         <summary>Enable remote access to the desktop</summary>
@@ -24,7 +24,7 @@
         <default>false</default>
       </key>
     </code>
-  </pre>
+  </textarea>
   
   
 <h3>Chinese input iBus-chewing(pinyin)</h3>
