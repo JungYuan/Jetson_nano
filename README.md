@@ -12,18 +12,16 @@
   #edit file to creat key<br>
   - sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml<br>
   ##Add following code into file##<br>
-  Please check the file append.xml 
-  ""
-      <key name='enabled' type='b'>
-        <summary>Enable remote access to the desktop</summary>
-        <description>
-          If true, allows remote access to the desktop via the RFB
-          protocol. Users on remote machines may then connect to the
-          desktop using a VNC viewer.
-        </description>
-        <default>false</default>
-      </key>
-  </xmp>
+  Please check the file append.xml <br>
+  ##after saved file, we need to compile##
+  -$sudo glib-compile-schemas /usr/share/glib-2.0/schemas<br>
+  ## modify setting ##<br>
+  -$gsettings set org.gnome.Vino enabled true<br>
+  -$gsettings set org.gnome.Vino prompt-enabled false<br>
+  -$gsettings set org.gnome.Vino require-encryption false<br>
+  ## Create/Modify ~/.config/autostart/vino-server.desktop ##<br>
+  -$sudo vi ~/.config/autostart/vino-server.desktop<br>
+  ## to add following code, please cehck append.desktop
   
   
 <h3>Chinese input iBus-chewing(pinyin)</h3>
