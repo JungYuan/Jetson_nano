@@ -6,9 +6,10 @@
   
 <h3>Chinese input iBus-chewing(pinyin)</h3>
   - #install iBus-chewing<br>
-  - $sudo apt-get install ibus-chewing(pinyin<br>
+  - $sudo apt-get install ibus-chewing(pinyin)<br>
+  - $sudo ibus restart<br>
   - #reboot<br>
-  - $sudo shutdown -r<br>
+  - $sudo shutdown<br>
   - #in X-shell setup -> Region/Language -> input -> more -> other -> select Chinese(chewing)<br>
   - # or $ibus-setup<br>
  
