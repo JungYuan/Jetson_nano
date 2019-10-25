@@ -11,8 +11,9 @@
   - $sudo apt-get install vino<br>
   #edit file to creat key<br>
   - sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml<br>
-  <p>##Add following code into file##</p>
-  <xmp>
+  ##Add following code into file##<br>
+  Please check the file append.xml 
+  ""
       <key name='enabled' type='b'>
         <summary>Enable remote access to the desktop</summary>
         <description>
