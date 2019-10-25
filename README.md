@@ -13,7 +13,7 @@
   - sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml<br>
   ##Add following code into file##<br>
   Please check the file append.xml <br>
-  ##after saved file, we need to compile##
+  ##after saved file, we need to compile##<br>
   -$sudo glib-compile-schemas /usr/share/glib-2.0/schemas<br>
   ## modify setting ##<br>
   -$gsettings set org.gnome.Vino enabled true<br>
@@ -21,8 +21,8 @@
   -$gsettings set org.gnome.Vino require-encryption false<br>
   ## Create/Modify ~/.config/autostart/vino-server.desktop ##<br>
   -$sudo vi ~/.config/autostart/vino-server.desktop<br>
-  ## to add following code, please cehck append.desktop
-  
+  ## to add following code for autorun after login Xwin, please check append.desktop##<br>
+  -$sudo reboot
   
 <h3>Chinese input iBus-chewing(pinyin)</h3>
   - #install iBus-chewing<br>
