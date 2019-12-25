@@ -48,5 +48,5 @@
 <h3>Useful information link</h3>
   <li>https://www.hackster.io/news/getting-started-with-the-nvidia-jetson-nano-developer-kit-43aa7c298797</li>
   <li>https://juejin.im/post/5cd01844e51d453a6c23b076</li>
-  <li></li>
+  <li>short prompt PS1="\w $: " https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html </li>
   <li></li>
