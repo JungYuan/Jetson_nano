@@ -59,7 +59,7 @@
   - jupyter lab or jupyter notebook <b>#start jupyter server</b><br>
   
 <h3> Install Jupyter virtualenv</h3>
-  - workon $envs$ <b>$envs$ fill your virtualenv name</b><br>
+  - workon $envs$ <b>#$envs$ fill your virtualenv name</b><br>
   - pip install ipykernel<br>
   - python -m ipykernel install --user --name=$vens$<br>
   
