@@ -42,6 +42,10 @@
   # You may comment out this entry, but any other modifications may be lost.<br>
   deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main<br>
 
+<h3>Install hardware information show</h3>
+  - sudo pip install jetson-stats<br>
+  - sudo jtop<br>
+  
 <h3>Install virtualenv, virtualenvwrapper</h3>
   - sudo pip install virtualenv virtualenvwrapper<br>
   - vim ~/.bashrc<br>
@@ -49,6 +53,7 @@
      export WORKON_HOME=$HOME/.virtualenvs<br>
      export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3<br>
      source /usr/local/bin/virtualenvwrapper.sh<br>
+     
 <h3>Install Jupyter notebook/Lab</h3>
   - sudo apt install nodejs npm<br>
   - sudo pip3 install jupyter jupyterlab<br>
@@ -66,6 +71,24 @@
 <h3>Learn Hello AI world</h3>
   - https://github.com/dusty-nv/jetson-inference<br>
 
+<h3>link cv2 to virtualenv</h3>
+  - sudo find / -name "cv2*"<br>
+  - cd ~/envs/AI/lib/python3.6/site-packages<br>
+  - ln -s /usr/lib/python3.6/dist-packages/cv2.cpython-36m-aarch64-linux-gnu.so<br>
+  
+<h3>using more memory by swapfile</h3>
+  - df -h <b>#check disk size</b><br>
+  - free -h <b>#check memory usage status</b><br>
+  - sudo fallocate -l 4G /swapfile<br>
+  - sudo chmod 600 /swapfile<br>
+  - ls -lh /swapfile<br>
+  - sudo mkswap /swapfile<br>
+  - sudo swapon /swapfile<br>
+  - sudo swapon -show<br>
+  - free -h<br>
+  - sudo cp /etc/fstab /etc/fstab.bak<br>
+  - echo '/swapfile none swap sw 0 0'| sudo tee -a /etc/fstab<br>
+  
 <h3>Useful information link</h3>
   <li>https://www.hackster.io/news/getting-started-with-the-nvidia-jetson-nano-developer-kit-43aa7c298797</li>
   <li>https://juejin.im/post/5cd01844e51d453a6c23b076</li>
