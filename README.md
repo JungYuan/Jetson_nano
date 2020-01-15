@@ -11,7 +11,7 @@
   - $sudo apt-get install vino<br>
   #edit file to creat key<br>
   - sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml<br>
-  ##Add following code into file##<br>
+  ##Add following code into file, check append.xml ##<br>
   <pre>
   Add this key:
       <key name='enabled' type='b'>
